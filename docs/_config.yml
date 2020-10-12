@@ -1,4 +1,4 @@
-#remote_theme: ddc-java/ddc-day
+remote_theme: ddc-java/ddc-day
 repository_links:
   enabled: false
 page_navigator:
@@ -13,4 +13,4 @@ description: "App allows discrete texts to be sent from the phone when a passphr
 author:
   name: "Isaac Dominguez"
   
-theme: jekyll-theme-cayman
+
