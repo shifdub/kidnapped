@@ -13,3 +13,4 @@ description: "App allows discrete texts to be sent from the phone when a passphr
 author:
   name: "Isaac Dominguez"
   
+theme: jekyll-theme-cayman
