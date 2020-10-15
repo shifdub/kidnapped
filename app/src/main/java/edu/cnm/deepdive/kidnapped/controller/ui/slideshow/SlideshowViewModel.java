@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.kidnapped.ui.slideshow;
+package edu.cnm.deepdive.kidnapped.controller.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

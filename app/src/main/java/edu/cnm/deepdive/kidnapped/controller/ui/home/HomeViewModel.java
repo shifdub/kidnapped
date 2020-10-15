@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.kidnapped.ui.home;
+package edu.cnm.deepdive.kidnapped.controller.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
