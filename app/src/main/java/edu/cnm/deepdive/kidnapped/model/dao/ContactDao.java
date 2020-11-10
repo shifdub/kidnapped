@@ -1,9 +1,11 @@
 package edu.cnm.deepdive.kidnapped.model.dao;
 
 import android.provider.ContactsContract.Contacts;
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.kidnapped.model.entity.Contact;
 import io.reactivex.Single;
@@ -39,5 +41,14 @@ public interface ContactDao {
 
   @Delete
   Single<Integer> delete (Collection<Contact> contacts);
+
+  @Query("SELECT * FROM Contact WHERE contact_id = :id ")
+  LiveData<Contact> getCurrentContact(long id);
+
+  @Query("SELECT * FROM Contact")
+  LiveData<List<Contact>>getAllContact();
+
+  @Query("SELECT * FROM Contact WHERE name = :name")
+  LiveData<Contact>getByName(String name);
 }
 

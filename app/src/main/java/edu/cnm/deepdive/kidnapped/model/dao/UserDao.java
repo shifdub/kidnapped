@@ -1,8 +1,10 @@
 package edu.cnm.deepdive.kidnapped.model.dao;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.kidnapped.model.entity.User;
 import io.reactivex.Single;
@@ -39,4 +41,12 @@ public interface UserDao {
 
   @Delete
   Single<Integer> delete (Collection<User> users);
+
+  @Query("SELECT * FROM User WHERE user_id = :id ")
+  LiveData<User>getCurrentUser(long id);
+
+  @Query("SELECT * FROM User")
+  LiveData<List<User>>getAllUser();
+
+
 }

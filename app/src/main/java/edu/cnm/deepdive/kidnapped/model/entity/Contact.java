@@ -26,10 +26,6 @@ public class Contact {
   private String phoneNumber;
 
   @NonNull
-  @ColumnInfo(name = "auto_reply")
-  private String autoReply;
-
-  @NonNull
   @ColumnInfo(name = "user_id")
   private User userId;
 
@@ -61,15 +57,6 @@ public class Contact {
 
   public void setPhoneNumber(@NonNull String phoneNumber) {
     this.phoneNumber = phoneNumber;
-  }
-
-  @NonNull
-  public String getAutoReply() {
-    return autoReply;
-  }
-
-  public void setAutoReply(@NonNull String autoReply) {
-    this.autoReply = autoReply;
   }
 
   @NonNull
