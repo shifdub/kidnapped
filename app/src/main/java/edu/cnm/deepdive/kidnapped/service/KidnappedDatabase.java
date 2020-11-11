@@ -15,8 +15,6 @@ import edu.cnm.deepdive.kidnapped.model.entity.User;
   @Database(
       entities = {User.class, Contact.class},
       version = 1, exportSchema = true)
-
-  @TypeConverters({User.class, Contact.class})
   public abstract class KidnappedDatabase extends RoomDatabase {
 
       private static final String DB_NAME = "kidnapped_db";

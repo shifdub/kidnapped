@@ -6,10 +6,10 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-@Entity ( foreignKeys = {
+@Entity(foreignKeys = {
     @ForeignKey(
         entity = User.class, parentColumns = "user_id", childColumns = "user_id", onDelete = ForeignKey.CASCADE)
-        })
+})
 
 public class Contact {
 
@@ -25,12 +25,11 @@ public class Contact {
   @ColumnInfo(name = "phone_number")
   private String phoneNumber;
 
-  @NonNull
-  @ColumnInfo(name = "user_id")
-  private User userId;
+  @ColumnInfo(name = "user_id", index = true)
+  private long userId;
 
   @NonNull
-  @ColumnInfo(name = "alert_message" )
+  @ColumnInfo(name = "alert_message")
   private String alertMessage;
 
   public long getContactId() {
@@ -59,16 +58,15 @@ public class Contact {
     this.phoneNumber = phoneNumber;
   }
 
-  @NonNull
-  public User getUserId() {
+  public long getUserId() {
     return userId;
   }
 
-  public void setUserId(@NonNull User userId) {
+  public void setUserId(long userId) {
     this.userId = userId;
   }
 
-    @NonNull
+  @NonNull
   public String getAlertMessage() {
     return alertMessage;
   }

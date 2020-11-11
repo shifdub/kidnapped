@@ -1,6 +1,5 @@
 package edu.cnm.deepdive.kidnapped.model.dao;
 
-import android.provider.ContactsContract.Contacts;
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -37,7 +36,7 @@ public interface ContactDao {
   Single<Integer> delete (Contact contact);
 
   @Delete
-  Single<Integer> delete (Contacts... contacts);
+  Single<Integer> delete (Contact... contacts);
 
   @Delete
   Single<Integer> delete (Collection<Contact> contacts);
