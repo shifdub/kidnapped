@@ -1,6 +1,6 @@
 # Entity Operations Checklist
 
-## Entity name: User
+## Entity name: Contact
 
 ## Operations
 
