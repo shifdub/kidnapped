@@ -9,7 +9,7 @@ the Kidnapped App is intended to save lives.
 
 * Kidnapped person
 
-	> As someone who has been in emergency situations before, I would like to be able to send out a discrete text to my family so they can call or come to help.
+	> As someone who has been in emergency situations before, I would like to be able to send out a discrete text to my family, so they can call or come to help.
 	
 * My Friend Rubin
 
@@ -36,7 +36,7 @@ the Kidnapped App is intended to save lives.
 
  * I hope to be able to have this app turn on gps and allow the location of the phone included in the distress text that is sent out.
  
- * Even further in the future allow the location serviices to continue updating and continue to send the device's location if it is moving to a new location. 
+ * Even further in the future allow the location services to continue updating and continue to send the device's location if it is moving to a new location. 
  
 ## [Device/external services](work/device.md)
  
