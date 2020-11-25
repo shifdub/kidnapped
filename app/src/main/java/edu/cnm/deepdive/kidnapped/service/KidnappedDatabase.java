@@ -4,7 +4,6 @@ import android.app.Application;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.room.TypeConverters;
 import edu.cnm.deepdive.kidnapped.model.dao.ContactDao;
 import edu.cnm.deepdive.kidnapped.model.dao.UserDao;
 import edu.cnm.deepdive.kidnapped.model.entity.Contact;
