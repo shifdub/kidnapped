@@ -11,4 +11,5 @@
   <string name="menu_gallery">Add Contact</string>
   <string name="menu_slideshow">Record Passphrase</string>
   <string name="kidnapped_app_home_title">KIDNAPPED APP</string>
+  <string name="record_a_passphrase">Record a Passphrase</string>
 </resources>
