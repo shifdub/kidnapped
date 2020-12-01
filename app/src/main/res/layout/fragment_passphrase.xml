@@ -5,19 +5,77 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="@drawable/background_fill"
   tools:context=".controller.ui.passphrase.PassphraseFragment">
 
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="365dp"/>
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="205dp"/>
   <TextView
     android:id="@+id/text_passphrase"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:textAlignment="center"
-    android:textSize="20sp"
+    android:layout_width="354dp"
+    android:layout_height="116dp"
+    android:gravity="center"
+    android:text="@string/record_a_passphrase_header"
+    android:textColor="@color/turquoise"
+    android:textSize="40sp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.49"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.43"/>
+  <Button
+    android:id="@+id/button5"
+    android:layout_width="150dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="140dp"
+    android:background="@drawable/rounded_buttons"
+    android:text="@string/record_again"
+    android:textColor="@color/magenta"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+    app:layout_constraintHorizontal_bias="0.296"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline5"
+    app:layout_constraintVertical_bias="1.0"/>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatingActionButton"
+    android:layout_width="122dp"
+    android:layout_height="131dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="304dp"
+    android:clickable="true"
+    android:src="@drawable/microphone_logo"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toBottomOf="@+id/text_passphrase"
+    app:layout_constraintVertical_bias="0.985"
+    android:focusable="true"/>
+  <Button
+    android:id="@+id/button6"
+    android:layout_width="150dp"
+    android:layout_height="60dp"
+    android:text="@string/save_button"
+    android:background="@drawable/rounded_buttons"
+    android:textColor="@color/turquoise"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.514"
+    app:layout_constraintStart_toStartOf="@+id/guideline6"
+    app:layout_constraintTop_toTopOf="@+id/guideline5"
+    app:layout_constraintVertical_bias="0.545"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

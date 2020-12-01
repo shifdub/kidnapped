@@ -28,4 +28,7 @@
   <string name="alert_text_hint">Ex. SOS! HELP! CALL 911!!!</string>
   <string name="stay_alive">Stay Alive!!!</string>
   <string name="add_a_contact_button">Add a Contact</string>
+  <string name="record_a_passphrase_header">Record A Passphrase</string>
+  <string name="_button">RECORD</string>
+  <string name="record_again">RECORD AGAIN?</string>
 </resources>
