@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.kidnapped.controller.ui.gallery;
+package edu.cnm.deepdive.kidnapped.controller.ui.contact;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,7 +21,7 @@ public class ContactFragment extends Fragment {
     contactViewModel =
         ViewModelProviders.of(this).get(ContactViewModel.class);
     View root = inflater.inflate(R.layout.fragment_contact, container, false);
-    final TextView textView = root.findViewById(R.id.text_gallery);
+    final TextView textView = root.findViewById(R.id.text_contact);
     contactViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
       @Override
       public void onChanged(@Nullable String s) {

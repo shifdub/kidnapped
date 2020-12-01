@@ -5,7 +5,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@color/colorPrimary"
+  android:background="@color/colorPrimaryDark"
   tools:context=".controller.ui.home.HomeFragment">
 
   <androidx.constraintlayout.widget.Guideline
@@ -26,43 +26,43 @@
   <TextView
     android:id="@+id/textView2"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="50dp"
     android:text="@string/kidnapped_app_home_title"
-    android:textColor="#01DEA1"
-    android:textSize="40sp"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="5sp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.088"/>
-
+    app:layout_constraintVertical_bias="0.135"/>
   <Button
     android:id="@+id/button"
-    android:layout_width="120dp"
+    android:layout_width="156dp"
     android:layout_height="wrap_content"
-    android:text="Add a Contact"
-    android:textColor="@color/buttonText"
     android:background="@drawable/rounded_buttons"
+    android:text="@string/add_a_contact_button"
+    android:textColor="@color/buttonText"
     app:layout_constraintBottom_toTopOf="@+id/guideline2"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.498"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textView2"
-    app:layout_constraintVertical_bias="0.615"/>
-
+    app:layout_constraintVertical_bias="0.776"/>
   <Button
     android:id="@+id/button2"
-    android:layout_width="120dp"
+    android:layout_width="156dp"
     android:layout_height="wrap_content"
+    android:background="@drawable/rounded_buttons"
     android:text="@string/record_a_passphrase"
     android:textColor="@color/buttonText"
-    android:background="@drawable/rounded_buttons"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.498"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/guideline2"
-    app:layout_constraintVertical_bias="0.238"/>
+    app:layout_constraintVertical_bias="0.216"/>
 
   <ImageView
     android:id="@+id/imageView2"
@@ -71,21 +71,33 @@
     android:layout_marginTop="100dp"
     app:layout_constraintBottom_toTopOf="@+id/guideline2"
     app:layout_constraintEnd_toStartOf="@+id/button"
-    app:layout_constraintHorizontal_bias="0.355"
+    app:layout_constraintHorizontal_bias="0.592"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textView2"
     app:layout_constraintVertical_bias="0.0"
     app:srcCompat="@drawable/contact_logo"/>
-
   <ImageView
     android:id="@+id/imageView3"
     android:layout_width="100dp"
     android:layout_height="100dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toStartOf="@+id/button2"
-    app:layout_constraintHorizontal_bias="0.355"
+    app:layout_constraintHorizontal_bias="0.592"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/guideline2"
-    app:layout_constraintVertical_bias="0.191"
+    app:layout_constraintVertical_bias="0.139"
     app:srcCompat="@drawable/microphone_logo"/>
+  <TextView
+    android:id="@+id/textView4"
+    android:layout_width="260dp"
+    android:layout_height="60dp"
+    android:text="@string/stay_alive"
+    android:textAlignment="center"
+    android:textStyle="italic"
+    android:textSize="36sp"
+    android:textColor="@color/turquoise"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button2"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

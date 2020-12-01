@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.kidnapped.controller.ui.gallery;
+package edu.cnm.deepdive.kidnapped.controller.ui.contact;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -10,7 +10,7 @@ public class ContactViewModel extends ViewModel {
 
   public ContactViewModel() {
     mText = new MutableLiveData<>();
-    mText.setValue("This is gallery fragment");
+    mText.setValue("This is contact fragment");
   }
 
   public LiveData<String> getText() {

@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.kidnapped.controller.ui.slideshow;
+package edu.cnm.deepdive.kidnapped.controller.ui.passphrase;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.kidnapped.R;
 
-public class SlideshowFragment extends Fragment {
+public class PassphraseFragment extends Fragment {
 
-  private SlideshowViewModel slideshowViewModel;
+  private PassphraseViewModel passphraseViewModel;
 
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
-    slideshowViewModel =
-        ViewModelProviders.of(this).get(SlideshowViewModel.class);
-    View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-    final TextView textView = root.findViewById(R.id.text_slideshow);
-    slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+    passphraseViewModel =
+        ViewModelProviders.of(this).get(PassphraseViewModel.class);
+    View root = inflater.inflate(R.layout.fragment_passphrase, container, false);
+    final TextView textView = root.findViewById(R.id.text_passphrase);
+    passphraseViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
       @Override
       public void onChanged(@Nullable String s) {
         textView.setText(s);

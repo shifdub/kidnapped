@@ -1,23 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".controller.ui.gallery.ContactFragment">
+  android:background="@color/colorPrimaryDark"
+  tools:context=".controller.ui.contact.ContactFragment">
 
   <TextView
-    android:id="@+id/text_gallery"
+    android:id="@+id/text_contact"
+    android:textStyle="normal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
+    android:singleLine="false"
+    android:text="@string/add_a_contact_header"
     android:textAlignment="center"
-    android:textSize="20sp"
+    android:textAllCaps="true"
+    android:textColor="@color/buttonText"
+    android:textIsSelectable="false"
+    android:textSize="40sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.084"/>
+  <EditText
+    android:id="@+id/editTextPhone"
+    android:layout_width="220dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="32dp"
+    android:ems="10"
+    android:inputType="phone"
+    android:hint="@string/phone_hint"
+    android:textColorHint="@color/buttonText"
+    android:textSize="24sp"
+    android:gravity="center"
+    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.957"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+    app:layout_constraintVertical_bias="1.0"/>
+  <TextView
+    android:id="@+id/textView3"
+    android:layout_width="145dp"
+    android:layout_height="60dp"
+    android:text="@string/add_phone_number"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+    app:layout_constraintEnd_toStartOf="@+id/editTextPhone"
+    app:layout_constraintHorizontal_bias="0.38"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+    app:layout_constraintVertical_bias="0.602"/>
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="365dp"/>
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="205dp"/>
+  <EditText
+    android:id="@+id/editTextTextPersonName"
+    android:layout_width="388dp"
+    android:layout_height="65dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="@string/name_hint"
+    android:textColorHint="@color/buttonText"
+    android:textSize="24sp"
+    android:textStyle="italic"
+    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.478"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_contact"
+    app:layout_constraintVertical_bias="0.214"/>
+  <TextView
+    android:id="@+id/textView5"
+    android:layout_width="145dp"
+    android:layout_height="60dp"
+    android:text="@string/add_alert_text"
+    android:textColor="@color/black"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/editTextAlertMessage"
+    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+    app:layout_constraintHorizontal_bias="0.383"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline3"
+    app:layout_constraintVertical_bias="0.802"/>
+  <EditText
+    android:id="@+id/editTextAlertMessage"
+    android:layout_width="365dp"
+    android:layout_height="65dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="@string/alert_text_hint"
+    android:textSize="24sp"
+    android:gravity="center"
+    android:textColorHint="@color/buttonText"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toTopOf="@+id/guideline3"/>
+  <Button
+    android:id="@+id/button3"
+    android:layout_width="160dp"
+    android:layout_height="56dp"
+    android:text="@string/save_button"
+    android:textColor="@color/magenta"
+    android:background="@drawable/rounded_buttons"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline4"
+    app:layout_constraintTop_toBottomOf="@+id/editTextAlertMessage"/>
+  <Button
+    android:id="@+id/button4"
+    android:layout_width="160dp"
+    android:layout_height="56dp"
+    android:text="@string/cancel_button"
+    android:textColor="@color/magenta"
+    android:background="@drawable/rounded_buttons"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextAlertMessage"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
