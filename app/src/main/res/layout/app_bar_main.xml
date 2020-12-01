@@ -21,7 +21,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/darkPurple"
+    android:background="@drawable/background_fill"
     app:titleTextColor="@color/buttonText"
     app:layout_anchor="@+id/include"
     app:layout_anchorGravity="top|center"
