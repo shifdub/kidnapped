@@ -22,6 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="?attr/colorPrimary"
+    app:titleTextColor="@color/buttonText"
     app:layout_anchor="@+id/include"
     app:layout_anchorGravity="top|center"
     app:popupTheme="@style/AppTheme.PopupOverlay"/>
