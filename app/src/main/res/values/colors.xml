@@ -6,6 +6,7 @@
   <color name="black">#000000</color>
   <color name="buttonText">#03DAC5</color>
   <color name="turquoise">#03DAC5</color>
-  <color name="magenta">#AB0EE4</color>
+  <color name="magenta">#E61BED</color>
+  <color name="darkPurple">#53024B</color>
 
 </resources>

@@ -5,7 +5,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@color/colorPrimaryDark"
+  android:background="@drawable/background_fill"
   tools:context=".controller.ui.home.HomeFragment">
 
   <androidx.constraintlayout.widget.Guideline
@@ -29,7 +29,7 @@
     android:layout_height="50dp"
     android:text="@string/kidnapped_app_home_title"
     android:textAlignment="center"
-    android:textColor="@color/black"
+    android:textColor="@color/turquoise"
     android:textSize="5sp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
     app:layout_constraintHorizontal_bias="0.592"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textView2"
-    app:layout_constraintVertical_bias="0.0"
+    app:layout_constraintVertical_bias="0.391"
     app:srcCompat="@drawable/contact_logo"/>
   <ImageView
     android:id="@+id/imageView3"
