@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.AppBarConfiguration.Builder;
 import androidx.navigation.ui.NavigationUI;
@@ -27,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
     // Passing each menu ID as a set of Ids because each
     // menu should be considered as top level destinations.
     mAppBarConfiguration = new Builder(
-        R.id.nav_home, R.id.nav_add_contact, R.id.nav_record_passphrase)
+        R.id.fragment_home, R.id.fragment_contact, R.id.fragment_passphrase)
         .setOpenableLayout(drawer)
         .build();
-    NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+    NavController navController = ((NavHostFragment) getSupportFragmentManager()
+        .findFragmentById(R.id.nav_host_fragment)).getNavController();
     NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
     NavigationUI.setupWithNavController(navigationView, navController);
 

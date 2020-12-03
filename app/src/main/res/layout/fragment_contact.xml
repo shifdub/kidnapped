@@ -128,7 +128,7 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/guideline3"/>
   <Button
-    android:id="@+id/button3"
+    android:id="@+id/saveContactButton"
     android:layout_width="160dp"
     android:layout_height="56dp"
     android:text="@string/save_button"
@@ -139,7 +139,7 @@
     app:layout_constraintStart_toStartOf="@+id/guideline4"
     app:layout_constraintTop_toBottomOf="@+id/editTextAlertMessage"/>
   <Button
-    android:id="@+id/button4"
+    android:id="@+id/cancelSaveContactButton"
     android:layout_width="160dp"
     android:layout_height="56dp"
     android:text="@string/cancel_button"
