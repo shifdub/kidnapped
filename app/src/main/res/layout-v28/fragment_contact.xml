@@ -57,7 +57,7 @@
     android:gravity="center"
     android:text="@string/add_phone_number"
     android:textColor="@color/turquoise"
-
+   
     android:textFontWeight="22"
     android:textSize="28sp"
     app:layout_constraintBottom_toTopOf="@+id/guideline3"

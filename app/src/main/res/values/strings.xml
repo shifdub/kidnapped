@@ -20,12 +20,12 @@
   <string name="record_a_passphrase">Record a Passphrase</string>
   <string name="add_a_contact_header">Add A Contact</string>
   <string name="phone_hint">555-123-4567</string>
-  <string name="add_phone_number">Add Phone Number:</string>
-  <string name="name_hint">Roy G. Biv</string>
+  <string name="add_phone_number">Add Phone Number :</string>
+  <string name="name_hint">(name goes here..)</string>
   <string name="cancel_button">Cancel</string>
   <string name="save_button">SAVE</string>
-  <string name="add_alert_text">Type Alert Text Here:</string>
-  <string name="alert_text_hint">Ex. SOS! HELP! CALL 911!!!</string>
+  <string name="add_alert_text">Type Alert Text Here :</string>
+  <string name="alert_text_hint">Ex: SOS! HELP! CALL 911!!!</string>
   <string name="stay_alive">Stay Alive!!!</string>
   <string name="add_a_contact_button">Add a Contact</string>
   <string name="record_a_passphrase_header">Record A Passphrase</string>

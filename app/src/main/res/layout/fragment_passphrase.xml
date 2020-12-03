@@ -36,32 +36,30 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.43"/>
 
+
   <Button
     android:id="@+id/playbackButton"
-    android:layout_width="150dp"
-    android:layout_height="60dp"
-    android:layout_marginBottom="140dp"
+    android:layout_width="160dp"
+    android:layout_height="56dp"
     android:background="@drawable/rounded_buttons"
     android:text="@string/playback"
     android:textColor="@color/magenta"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toStartOf="@+id/guideline6"
-    app:layout_constraintHorizontal_bias="0.29"
+    app:layout_constraintHorizontal_bias="0.5"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/guideline5"
-    app:layout_constraintVertical_bias="1.0"/>
-
-
+    app:layout_constraintVertical_bias="0.542"/>
   <Button
     android:id="@+id/savePassphraseButton"
-    android:layout_width="150dp"
-    android:layout_height="60dp"
+    android:layout_width="160dp"
+    android:layout_height="56dp"
     android:background="@drawable/rounded_buttons"
     android:text="@string/save_button"
     android:textColor="@color/turquoise"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.714"
+    app:layout_constraintHorizontal_bias="0.50"
     app:layout_constraintStart_toStartOf="@+id/guideline6"
     app:layout_constraintTop_toTopOf="@+id/guideline5"
     app:layout_constraintVertical_bias="0.542"/>
