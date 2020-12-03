@@ -31,4 +31,5 @@
   <string name="record_a_passphrase_header">Record A Passphrase</string>
   <string name="_button">RECORD</string>
   <string name="record_again">RECORD AGAIN?</string>
+  <string name="playback">Playback</string>
 </resources>

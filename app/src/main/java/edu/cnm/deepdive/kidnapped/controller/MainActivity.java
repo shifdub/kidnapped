@@ -1,5 +1,4 @@
 package edu.cnm.deepdive.kidnapped.controller;
-
 import android.os.Bundle;
 import android.view.Menu;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.AppBarConfiguration.Builder;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.navigation.NavigationView;
 import edu.cnm.deepdive.kidnapped.R;
@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView = findViewById(R.id.nav_view);
     // Passing each menu ID as a set of Ids because each
     // menu should be considered as top level destinations.
-    mAppBarConfiguration = new AppBarConfiguration.Builder(
+    mAppBarConfiguration = new Builder(
         R.id.nav_home, R.id.nav_add_contact, R.id.nav_record_passphrase)
-        .setDrawerLayout(drawer)
+        .setOpenableLayout(drawer)
         .build();
     NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
     NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);

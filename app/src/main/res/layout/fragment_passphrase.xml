@@ -37,12 +37,12 @@
     app:layout_constraintVertical_bias="0.43"/>
 
   <Button
-    android:id="@+id/button5"
+    android:id="@+id/playbackButton"
     android:layout_width="150dp"
     android:layout_height="60dp"
     android:layout_marginBottom="140dp"
     android:background="@drawable/rounded_buttons"
-    android:text="@string/record_again"
+    android:text="@string/playback"
     android:textColor="@color/magenta"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toStartOf="@+id/guideline6"
@@ -53,7 +53,7 @@
 
 
   <Button
-    android:id="@+id/button6"
+    android:id="@+id/savePassphraseButton"
     android:layout_width="150dp"
     android:layout_height="60dp"
     android:background="@drawable/rounded_buttons"
@@ -65,4 +65,15 @@
     app:layout_constraintStart_toStartOf="@+id/guideline6"
     app:layout_constraintTop_toTopOf="@+id/guideline5"
     app:layout_constraintVertical_bias="0.542"/>
+  <Button
+    android:id="@+id/recordButton"
+    android:layout_width="143dp"
+    android:layout_height="143dp"
+    android:textColor="@color/turquoise"
+    android:background="@drawable/microphone_logo"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_passphrase"
+    app:layout_constraintVertical_bias="0.194"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

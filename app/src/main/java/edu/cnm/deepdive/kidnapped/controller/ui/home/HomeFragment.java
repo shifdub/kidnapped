@@ -21,7 +21,7 @@ public class HomeFragment extends Fragment {
 
   private HomeViewModel homeViewModel;
   private FragmentHomeBinding binding;
-  private FragmentHomeBinding newBinding;
+
 
   /**
    *
@@ -34,13 +34,14 @@ public class HomeFragment extends Fragment {
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
     binding = edu.cnm.deepdive.kidnapped.databinding.FragmentHomeBinding.inflate(inflater);
-    binding.addContactButton.setOnClickListener((v) -> Navigation.findNavController(getView()).navigate(R.id.fragment_contact));
-    binding.passphraseButton.setOnClickListener((b) -> Navigation.findNavController(getView()).navigate(R.id.fragment_passphrase));
+    binding.addContactButton.setOnClickListener((v) ->
+        Navigation.findNavController(getView()).navigate(R.id.fragment_contact));
+    binding.passphraseButton.setOnClickListener((b) ->
+        Navigation.findNavController(getView()).navigate(R.id.fragment_passphrase));
         homeViewModel =
             ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-
-    return binding.getRoot();
+        return binding.getRoot();
   }
 }
