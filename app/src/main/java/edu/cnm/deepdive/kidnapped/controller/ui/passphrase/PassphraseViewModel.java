@@ -10,7 +10,7 @@ public class PassphraseViewModel extends ViewModel {
 
   public PassphraseViewModel() {
     mText = new MutableLiveData<>();
-    mText.setValue("This is passphrase fragment");
+    mText.setValue("RECORD A PASSPHRASE");
   }
 
   public LiveData<String> getText() {

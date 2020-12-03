@@ -38,9 +38,9 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.135"/>
   <Button
-    android:id="@+id/button"
+    android:id="@+id/addContactButton"
     android:layout_width="156dp"
-    android:layout_height="wrap_content"
+    android:layout_height="56dp"
     android:background="@drawable/rounded_buttons"
     android:text="@string/add_a_contact_button"
     android:textColor="@color/buttonText"
@@ -51,12 +51,12 @@
     app:layout_constraintTop_toBottomOf="@+id/textView2"
     app:layout_constraintVertical_bias="0.776"/>
   <Button
-    android:id="@+id/button2"
+    android:id="@+id/passphraseButton"
     android:layout_width="156dp"
-    android:layout_height="wrap_content"
+    android:layout_height="56dp"
     android:background="@drawable/rounded_buttons"
     android:text="@string/record_a_passphrase"
-    android:textColor="@color/buttonText"
+    android:textColor=""
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.498"
@@ -70,7 +70,7 @@
     android:layout_height="100dp"
     android:layout_marginTop="100dp"
     app:layout_constraintBottom_toTopOf="@+id/guideline2"
-    app:layout_constraintEnd_toStartOf="@+id/button"
+    app:layout_constraintEnd_toStartOf="@+id/addContactButton"
     app:layout_constraintHorizontal_bias="0.592"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -81,7 +81,7 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/button2"
+    app:layout_constraintEnd_toStartOf="@+id/passphraseButton"
     app:layout_constraintHorizontal_bias="0.592"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/guideline2"
@@ -99,5 +99,5 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/button2"/>
+    app:layout_constraintTop_toBottomOf="@+id/passphraseButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

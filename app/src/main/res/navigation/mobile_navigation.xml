@@ -3,22 +3,29 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/mobile_navigation"
-  app:startDestination="@+id/nav_home">
+  app:startDestination="@+id/fragment_home">
 
   <fragment
-    android:id="@+id/nav_home"
+    android:id="@+id/fragment_home"
     android:label="@string/menu_home"
     android:name="edu.cnm.deepdive.kidnapped.controller.ui.home.HomeFragment"
-    tools:layout="@layout/fragment_home"/>
+    tools:layout="@layout/fragment_home">
+    <action
+      android:id="@+id/action_nav_home_to_fragment_contact"
+      app:destination="@id/fragment_contact"/>
+    <action
+      android:id="@+id/action_nav_home_to_fragment_passphrase"
+      app:destination="@id/fragment_passphrase"/>
+  </fragment>
 
   <fragment
-    android:id="@+id/nav_gallery"
+    android:id="@+id/fragment_contact"
     android:label="@string/menu_gallery"
     android:name="edu.cnm.deepdive.kidnapped.controller.ui.contact.ContactFragment"
     tools:layout="@layout/fragment_contact"/>
 
   <fragment
-    android:id="@+id/nav_slideshow"
+    android:id="@+id/fragment_passphrase"
     android:label="@string/menu_slideshow"
     android:name="edu.cnm.deepdive.kidnapped.controller.ui.passphrase.PassphraseFragment"
     tools:layout="@layout/fragment_passphrase"/>
