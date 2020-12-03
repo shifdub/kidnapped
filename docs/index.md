@@ -54,6 +54,8 @@ the Kidnapped App is intended to save lives.
 
 ## [Build/Deployment Instructions](work/build-deployment.md)
 
+## [License](work/License.md)
+
 Copyright 2020 Isaac C. Dominguez
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -68,4 +70,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-## [License](work/License.md)
