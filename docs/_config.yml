@@ -1,12 +1,4 @@
-remote_theme: ddc-java/ddc-day
-repository_links:
-  enabled: false
-page_navigator:
-  enabled: false
-titles_from_headings:
-  enabled: false
 
-# Modify the contents below for the specific project.
 
 title: "Kidnapped App"
 description: "App allows discrete texts to be sent from the phone when a passphrase is spoken into the device's microphone"
