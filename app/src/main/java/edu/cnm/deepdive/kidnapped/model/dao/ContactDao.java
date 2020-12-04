@@ -14,6 +14,11 @@ import java.util.List;
 @Dao
 public interface ContactDao {
 
+  /**
+   * @param contact allows user to insert, update, delete and do specific queries on the
+   *  Contact entities.
+   */
+
   @Insert
   Single<Long> insert (Contact contact);
 

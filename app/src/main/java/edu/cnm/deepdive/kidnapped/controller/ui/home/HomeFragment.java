@@ -12,6 +12,11 @@ import androidx.navigation.Navigation;
 import edu.cnm.deepdive.kidnapped.R;
 import edu.cnm.deepdive.kidnapped.databinding.FragmentHomeBinding;
 
+/**
+ * The introductory fragment where the User selects their choice to navigate to ContactFragment or PassphraseFragment with
+ * the click of each labeled button
+ */
+
 public class HomeFragment extends Fragment {
 
   private HomeViewModel homeViewModel;

@@ -10,6 +10,10 @@ import edu.cnm.deepdive.kidnapped.model.entity.Contact;
 import edu.cnm.deepdive.kidnapped.model.entity.User;
 
 
+/**
+ * A Database class that keeps track of user and contact and
+ * build via data access object classes
+ */
 
   @Database(
       entities = {User.class, Contact.class},
@@ -20,18 +24,40 @@ import edu.cnm.deepdive.kidnapped.model.entity.User;
 
       private static Application context;
 
+  /**
+   * Constructor for the database.
+   * @param context , an application object which provides the context
+   */
+
       public static void setContext(Application context) {
     KidnappedDatabase.context = context;
     }
+
+  /**
+   * Constructor that gets us the instance of the Database.
+   */
 
     public static KidnappedDatabase getInstance() {
       return InstanceHolder.INSTANCE;
       }
 
-      public abstract UserDao getUserDao();
+  /**
+   * Getter for UserDao
+   * @return returns userDao
+   */
 
-      public abstract ContactDao getContactDao();
+  public abstract UserDao getUserDao();
 
+  /**
+   * Getter for contactDao
+   * @return returns userDao
+   */
+
+  public abstract ContactDao getContactDao();
+
+  /**
+   * InstanceHolder method uses Room to build database for the app
+   */
       private static class InstanceHolder {
 
         private static final KidnappedDatabase INSTANCE =

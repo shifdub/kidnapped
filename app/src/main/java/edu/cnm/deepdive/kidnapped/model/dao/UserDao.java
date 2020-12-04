@@ -15,11 +15,12 @@ import java.util.List;
 @Dao
 public interface UserDao {
 
+
   /**
-   *
-   * @param user allows us to save, update, and delete single, multiple or all users
-   * @return returns user data for single , multiple or all users
+   * @param user allows user to insert, update, delete and do specific queries on the
+   *  User entities.
    */
+
   @Insert
   Single<Long> insert (User user);
 
@@ -47,19 +48,9 @@ public interface UserDao {
   @Delete
   Single<Integer> delete (Collection<User> users);
 
-  /**
-   *
-   * @param id Selects current user
-   * @return returns current user from query
-   */
-
   @Query("SELECT * FROM User WHERE user_id = :id ")
   LiveData<User>getCurrentUser(long id);
 
-  /**
-   *
-   * @return returns all users from query
-   */
   @Query("SELECT * FROM User")
   LiveData<List<User>>getAllUser();
 

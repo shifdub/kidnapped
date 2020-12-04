@@ -25,7 +25,6 @@ public class User {
 
   /**
    * Getter for userId
-   *
    * @return returns a long id
    */
 
@@ -35,8 +34,7 @@ public class User {
 
   /**
    * Setter for userId
-   *
-   * @param id , a long id
+   * @return returns a long id
    */
 
   public void setId(long id) {
@@ -45,7 +43,6 @@ public class User {
 
   /**
    * Getter for UserName
-   *
    * @return returns a String that represent the UserName
    */
 
@@ -55,7 +52,6 @@ public class User {
 
   /**
    * Setter for UserName
-   *
    * @return returns a String that represent the UserName
    */
 
@@ -63,15 +59,19 @@ public class User {
     this.userName = userName;
   }
 
-
   /**
    * Getter for passphrase
-   *
-   * @return , a String that represent the passphrase.
+   * @return returns a String that represents the passphrase.
    */
+
   public String getPassphrase() {
     return passphrase;
   }
+
+  /**
+   * Setter for passphrase
+   * @return returns a String that represents the passphrase.
+   */
 
   public void setPassphrase(String passphrase) {
     this.passphrase = passphrase;

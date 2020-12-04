@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
   }
 
   /**
-   *
    * @return returns the App Bar and its contents
    */
   @Override

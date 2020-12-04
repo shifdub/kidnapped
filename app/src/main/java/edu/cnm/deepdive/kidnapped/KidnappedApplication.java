@@ -7,6 +7,10 @@ import io.reactivex.schedulers.Schedulers;
 
 public class KidnappedApplication extends Application {
 
+  /**
+   * onCreate method initializes app database and uses stetho to debug and configure the app
+   */
+
   @Override
   public void onCreate() {
     super.onCreate();
