@@ -1,0 +1,8 @@
+edu.cnm.deepdive.kidnapped
+edu.cnm.deepdive.kidnapped.controller
+edu.cnm.deepdive.kidnapped.controller.ui.contact
+edu.cnm.deepdive.kidnapped.controller.ui.home
+edu.cnm.deepdive.kidnapped.controller.ui.passphrase
+edu.cnm.deepdive.kidnapped.model.dao
+edu.cnm.deepdive.kidnapped.model.entity
+edu.cnm.deepdive.kidnapped.service
