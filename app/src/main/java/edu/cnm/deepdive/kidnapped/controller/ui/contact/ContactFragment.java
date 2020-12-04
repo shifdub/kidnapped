@@ -26,6 +26,11 @@ public class ContactFragment extends Fragment {
     return root;
   }
 
+  /**
+   *
+   * @param view
+   * @param savedInstanceState
+   */
   @Override
   public void onViewCreated(@NonNull View view,
       @Nullable Bundle savedInstanceState) {
