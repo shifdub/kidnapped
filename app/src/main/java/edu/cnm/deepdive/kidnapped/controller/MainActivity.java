@@ -18,8 +18,9 @@ public class MainActivity extends AppCompatActivity {
   private AppBarConfiguration mAppBarConfiguration;
 
   /**
-   *
-   * @param savedInstanceState This parameter store data needed to reload the state of the MainActivity
+   *The onCreate method performs initialization of all fragments and allows user to view the AppBar
+   *  that allows users to navigate to other fragments.
+   * @param savedInstanceState This parameter stores data needed to reload the state of the MainActivity
    */
 
   @Override

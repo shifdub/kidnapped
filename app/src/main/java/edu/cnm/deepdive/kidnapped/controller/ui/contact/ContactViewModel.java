@@ -10,11 +10,20 @@ import edu.cnm.deepdive.kidnapped.model.entity.Contact;
 import edu.cnm.deepdive.kidnapped.service.ContactRepository;
 import io.reactivex.disposables.CompositeDisposable;
 
+/**
+ *  This viewModel is for the ContactFragment
+ */
+
 public class ContactViewModel extends AndroidViewModel {
 
   private final ContactRepository contactRepository;
   private final MutableLiveData<Throwable> throwable;
   private final CompositeDisposable pending;
+
+  /**
+   *
+   * @param application This is base class for maintaining the state of the contactRepository
+   */
 
   public ContactViewModel(
       @NonNull Application application) {
@@ -23,6 +32,11 @@ public class ContactViewModel extends AndroidViewModel {
     throwable = new MutableLiveData<>();
     pending = new CompositeDisposable();
   }
+
+  /**
+   * The save method is for saving contacts in the contactRepository
+   * @param contact instance of Contact entity class that holds data associated with a contact
+   */
 
   public void save(Contact contact) {
     throwable.setValue(null);
