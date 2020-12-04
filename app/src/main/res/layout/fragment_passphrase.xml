@@ -63,12 +63,13 @@
     app:layout_constraintStart_toStartOf="@+id/guideline6"
     app:layout_constraintTop_toTopOf="@+id/guideline5"
     app:layout_constraintVertical_bias="0.542"/>
-  <Button
+  <ImageButton
     android:id="@+id/recordButton"
-    android:layout_width="143dp"
-    android:layout_height="143dp"
+    android:layout_width="134dp"
+    android:layout_height="139dp"
+    android:background="@drawable/green_background_fill"
+    android:src="@drawable/microphone_logo"
     android:textColor="@color/turquoise"
-    android:background="@drawable/microphone_logo"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"

@@ -38,7 +38,7 @@ the Kidnapped App is intended to save lives.
  
  * Even further in the future allow the location services to continue updating and continue to send the device's location if it is moving to a new location. 
  
- ## [Wireframe Diagram](work/wireframe.md)
+## [Wireframe Diagram](work/wireframe.md)
 
 ## [Device/external services](work/device.md)
 
