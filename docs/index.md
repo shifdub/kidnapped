@@ -1,7 +1,7 @@
 ## Summary
 
 
-Ever been in a jam where time was crucial to your survival? Perhaps you've been in a car crash where you were pinned down and couldnt reach your phone to call 911, or possibly attacked or even kidnapped where the assailants took your phone? These are scenarios where time could mean life or death. What if there was a way to activate a distress call or text to 911 without unlocking your phone to manually dial or unlocking to asking Alexa to make the call. What if the phone was nearby but out of your hands completely?
+Ever been in a jam where time was crucial to your survival? Perhaps you've been in a car crash where you were pinned down and couldn't reach your phone to call 911, or possibly attacked or even kidnapped where the assailants took your phone? These are scenarios where time could mean life or death. What if there was a way to activate a distress call or text to 911 without unlocking your phone to manually dial or unlocking to asking Alexa to make the call. What if the phone was nearby but out of your hands completely?
 the Kidnapped App is intended to save lives. 
 
 ## Intended users
@@ -40,7 +40,7 @@ the Kidnapped App is intended to save lives.
  
 ## [Wireframe Diagram](work/wireframe.md)
 
-## [Device/external services](work/device.md)
+## [Device/External services](work/device.md)
 
 ## [Entity Relationship Diagram](work/erd.md)
 
@@ -53,6 +53,10 @@ the Kidnapped App is intended to save lives.
 ## [Kidnapped App Database](https://github.com/shifdub/kidnapped/blob/master/app/src/main/java/edu/cnm/deepdive/kidnapped/service/KidnappedDatabase.java)
 
 ## [Build/Deployment Instructions](work/build-deployment.md)
+
+## [Instructions for Use](work/Instructions.md)
+
+## [Javadocs](api/overview-summary.html)
 
 ## [License](work/License.md)
 
