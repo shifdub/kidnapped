@@ -46,10 +46,24 @@ public class PassphraseFragment extends Fragment {
   private boolean settingUpRecording;
   private boolean tearingDownRecording;
 
+
+  /**
+   *
+   * @param inflater This inflater inflates the passphrase layout
+   * @param container contains the PassphraseFragment layout
+   * @param savedInstanceState This parameter store data needed to reload the state of the PassphraseFragment
+   * @return returns the PassphraseFragment layout
+   */
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
     return inflater.inflate(R.layout.fragment_passphrase, container, false);
   }
+
+  /**
+   *
+   * @param view is a base class used to create the recordButton
+   * @param savedInstanceState stores data needed to reload the state of the recordButton
+   */
 
   @Override
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -58,7 +72,10 @@ public class PassphraseFragment extends Fragment {
     recordButton.setOnClickListener(this::toggleRecording);
   }
 
-
+  /**
+   *
+   * @param v is a variable assisgned to the base class View.
+   */
   public void toggleRecording(View v) {
     if (!settingUpRecording && !tearingDownRecording) {
       if (isRecording) {
@@ -69,6 +86,10 @@ public class PassphraseFragment extends Fragment {
     }
   }
 
+  /**
+   * The stopRecording method is used to tell the media recorder how to react to the recordButton being
+   * pressed or released and to start/stop accordingly as well as log errors
+   */
   private void stopRecording() {
     try {
       tearingDownRecording = true;
@@ -80,7 +101,7 @@ public class PassphraseFragment extends Fragment {
       //No need to handle this exception
       Log.e(getClass().getSimpleName(), e.getMessage(), e);
     } finally {
-      recordButton.setImageResource(R.drawable.microphone_logo);
+      recordButton.setImageResource(R.drawable.record_stop);
       mediaRecorder = null;
       isRecording = false;
       tearingDownRecording = false;
@@ -88,13 +109,20 @@ public class PassphraseFragment extends Fragment {
 
   }
 
+  /**
+   *
+   *This method assigns a path for recorded sound media, the microphone used to record, as well as a format
+   * to record date and time, even the timezone.
+   *  We also assign our record button and its resource location for the picture used for the button.
+   */
+
   private void startRecording() {
     try {
       settingUpRecording = true;
       String recordPath = getActivity().getExternalFilesDir("/").getAbsolutePath();
       SimpleDateFormat formatter = new SimpleDateFormat("yyy_MM_dd_hh_mm_ss", Locale.US);
       Date now = new Date();
-      String recordFile = "Recording_" + formatter.format(now) + ".3gp";
+      recordFile = "Recording_" + formatter.format(now) + ".3gp";
       mediaRecorder = new MediaRecorder();
       mediaRecorder.setAudioSource(AudioSource.MIC);
       mediaRecorder.setOutputFormat(OutputFormat.THREE_GPP);
@@ -103,8 +131,7 @@ public class PassphraseFragment extends Fragment {
       mediaRecorder.prepare();
       mediaRecorder.start();
       recordButton
-          .setImageResource(R.drawable.record_stop);
-      this.recordFile = recordFile;
+          .setImageResource(R.drawable.microphone_logo);
       isRecording = true;
     } catch (Throwable e) {
       Log.e(getClass().getSimpleName(), e.getMessage(), e);
@@ -113,6 +140,12 @@ public class PassphraseFragment extends Fragment {
       settingUpRecording = false;
     }
   }
+
+  /**
+   * This methodd asks the user to grant or deny permission to use the device microphone to record audio
+   * @return If the user accepts permission granted is returned. If user selects "deny",
+   * permission is not granted and audio cannot be recorded.
+   */
 
   private boolean checkPermissions() {
     if (ActivityCompat.checkSelfPermission(getContext(), recordPermission)

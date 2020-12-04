@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
 
   private AppBarConfiguration mAppBarConfiguration;
 
+  /**
+   *
+   * @param savedInstanceState This parameter store data needed to reload the state of the MainActivity
+   */
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -38,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
   }
 
+  /**
+   *
+    * @param menu is an interface that manages the items in the onCreateOptionsMenu
+   * @return returns the menu and its contents
+   */
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     // Inflate the menu; this adds items to the action bar if it is present.
@@ -45,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
     return true;
   }
 
+  /**
+   *
+   * @return returns the App Bar and its contents
+   */
   @Override
   public boolean onSupportNavigateUp() {
     NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

@@ -12,12 +12,21 @@ public class UserRepository {
   private final Context context;
   private final UserDao userDao;
 
+  /**
+   *
+   * @param context gives access to userDao
+   */
 
   public UserRepository(Context context) {
     this.context = context;
     userDao = KidnappedDatabase.getInstance().getUserDao();
   }
 
+  /**
+   *
+   * @param user assigns an id for a User in userDao
+   * @return returns info saved by user
+   */
   public Completable save(User user) {
     return (user.getId() == 0)
         ? userDao.insert(user)
@@ -27,6 +36,11 @@ public class UserRepository {
             .ignoreElement();
   }
 
+  /**
+   *
+   * @param user allows user id to be deleted from userDao
+   * @return
+   */
   public Completable delete(User user) {
     return (user.getId() == 0)
         ? Completable.complete()
