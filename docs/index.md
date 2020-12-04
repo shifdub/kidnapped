@@ -54,6 +54,8 @@ the Kidnapped App is intended to save lives.
 
 ## [Build/Deployment Instructions](work/build-deployment.md)
 
+## [DDL](sql/ddl.sql)
+
 ## [Instructions for Use](work/Instructions.md)
 
 ## [Javadocs](api/overview-summary.html)
