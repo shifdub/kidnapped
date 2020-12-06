@@ -30,8 +30,6 @@ the Kidnapped App is intended to save lives.
  
  * A recording of the user's voice to activate app to send out text
 
-## Device/external services
-
 ## Stretch goals/possible enhancements 
 
  * I hope to be able to have this app turn on gps and allow the location of the phone included in the distress text that is sent out.
@@ -68,7 +66,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
