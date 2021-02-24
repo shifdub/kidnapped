@@ -95,9 +95,11 @@
     android:textAlignment="center"
     android:textStyle="italic"
     android:textSize="36sp"
+
     android:textColor="@color/turquoise"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/passphraseButton"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
